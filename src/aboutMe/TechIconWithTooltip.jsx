@@ -1,5 +1,5 @@
 import {Box, styled, Tooltip} from "@mui/material";
-import {TECH_TO_ICON_MAP} from "./utils/Utils.jsx";
+import {TECH_TO_ICON_MAP} from "../utils/Utils.jsx";
 
 const StyledIconContainer = styled(Box)(() => ({
     display: "flex",

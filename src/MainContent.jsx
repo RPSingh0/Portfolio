@@ -27,6 +27,20 @@ const StyledSpeedDial = styled(SpeedDial)(() => ({
     }
 }));
 
+const StyledSpeedDialAction = styled(SpeedDialAction)(() => ({
+    backgroundColor: "#353c4a",
+
+    "& svg": {
+        color: grey["300"]
+    },
+
+    "&:hover": {
+        "& svg": {
+            color: grey["900"]
+        }
+    }
+}));
+
 function MainContent() {
 
     const [currentContent, setCurrentContent] = useState("home");
@@ -58,7 +72,7 @@ function MainContent() {
             >
                 {
                     SCREENS.map(screen =>
-                        <SpeedDialAction
+                        <StyledSpeedDialAction
                             key={screen.key}
                             icon={screen.icon}
                             tooltipTitle={screen.text}

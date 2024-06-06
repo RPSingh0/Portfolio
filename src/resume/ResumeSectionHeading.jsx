@@ -1,6 +1,6 @@
 import {Box, styled} from "@mui/material";
-import SubHeaderTitle from "./ui/SubHeaderTitle.jsx";
-import {TYPE_TO_ICON_MAP} from "./utils/Utils.jsx";
+import SubHeaderTitle from "../ui/SubHeaderTitle.jsx";
+import {TYPE_TO_ICON_MAP} from "../utils/Utils.jsx";
 
 const StyledContactItemContainer = styled(Box)(() => ({
     display: "flex",
