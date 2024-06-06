@@ -1,6 +1,5 @@
 import {Box, styled} from "@mui/material";
-import {grey} from "@mui/material/colors";
-import SubHeaderTitle from "./SubHeaderTitle.jsx";
+import SubHeaderTitle from "./ui/SubHeaderTitle.jsx";
 import {TYPE_TO_ICON_MAP} from "./utils/Utils.jsx";
 
 const StyledContactItemContainer = styled(Box)(() => ({
@@ -13,7 +12,7 @@ const StyledIconContainer = styled(Box)(() => ({
     display: "flex",
     justifyContent: "center",
     padding: "0.5rem",
-    backgroundColor: grey["800"],
+    backgroundColor: "#353c4a",
     borderRadius: "0.5rem",
 
     "& svg": {

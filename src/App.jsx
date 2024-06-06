@@ -1,13 +1,13 @@
 import {Box, styled} from "@mui/material";
 import {grey} from "@mui/material/colors";
-import Aside from "./Aside.jsx";
 import MainContent from "./MainContent.jsx";
+import Aside from "./aside/Aside.jsx";
 
-const StyledMainContainer = styled(Box)(({theme}) => ({
+const StyledParentContainer = styled(Box)(() => ({
     display: "flex",
     gap: "1rem",
     justifyContent: "center",
-    color: grey["50"],
+    color: grey["300"],
     maxWidth: "80%",
     marginTop: "4rem",
     marginBottom: "4rem",
@@ -35,10 +35,10 @@ const StyledMainContainer = styled(Box)(({theme}) => ({
 
 function App() {
     return (
-        <StyledMainContainer>
+        <StyledParentContainer>
             <Aside/>
             <MainContent/>
-        </StyledMainContainer>
+        </StyledParentContainer>
     );
 }
 

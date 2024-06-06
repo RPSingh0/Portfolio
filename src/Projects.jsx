@@ -1,4 +1,4 @@
-import HeaderTitle from "./HeaderTitle.jsx";
+import HeaderTitle from "./ui/HeaderTitle.jsx";
 import {Box, Chip, styled, Typography} from "@mui/material";
 import {grey} from "@mui/material/colors";
 import {CHIP_TYPE_TO_ICON_MAP} from "./utils/Utils.jsx";
@@ -106,7 +106,7 @@ const StyledProjectCoverImage = styled("img")(() => ({
 const StyledImageContainer = styled(Box)(() => ({
     borderRadius: "1rem",
     padding: "1rem",
-    backgroundColor: grey["800"],
+    backgroundColor: "#353c4a",
     width: "100%",
     height: "70%",
 
@@ -126,7 +126,7 @@ const StyledImageSubContainer = styled(Box)(() => ({
 const StyledProjectInfo = styled(Box)(() => ({
     borderRadius: "1rem",
     padding: "0.5rem 1rem",
-    backgroundColor: grey["800"],
+    backgroundColor: "#353c4a",
 }));
 
 const StyledProjectInfoChipContainer = styled(Box)(() => ({
@@ -138,9 +138,9 @@ const StyledProjectInfoChipContainer = styled(Box)(() => ({
 const StyledChip = styled(Chip)(() => ({
     color: "white",
 
-    // "& svg": {
-    //     stroke: "white"
-    // }
+    "& svg": {
+        color: `${grey["300"]} !important`
+    }
 }));
 
 const StyledLink = styled("a")(() => ({
@@ -158,7 +158,7 @@ function ProjectChip({href, label}) {
 
     return (
         <StyledLink href={href} target={"_blank"}>
-            <StyledChip label={label} size={"small"} icon={icon}/>
+            <StyledChip label={label} size={"small"} icon={icon} sx={{backgroundColor: "#181e29"}}/>
         </StyledLink>
     );
 }

@@ -1,7 +1,8 @@
 import {Box, Divider, styled, Typography} from "@mui/material";
 import {blue, grey} from "@mui/material/colors";
-import ContactItem from "./contact/ContactItem.jsx";
-import SocialContact from "./contact/SocialContact.jsx";
+import ContactItem from "./ContactItem.jsx";
+import SocialContact from "./SocialContact.jsx";
+import {USER_CONTACT, USER_SOCIAL_CONTACT} from "../utils/Utils.jsx";
 
 const StyledAsideContainer = styled(Box)(() => ({
     flex: 1,
@@ -14,7 +15,7 @@ const StyledAsideContainer = styled(Box)(() => ({
     gap: "2rem",
     padding: "2rem",
     paddingTop: "4rem",
-    backgroundColor: grey["900"],
+    backgroundColor: "#181e29",
     borderRadius: "1rem",
     position: "sticky",
     top: "4rem",
@@ -55,7 +56,7 @@ const StyledImage = styled("img")(() => ({
 
 const StyledDesignationContainer = styled(Box)(() => ({
     padding: "0.4rem 0.8rem",
-    backgroundColor: grey["800"],
+    backgroundColor: "#353c4a",
     borderRadius: "0.5rem"
 }));
 
@@ -98,14 +99,19 @@ function Aside() {
             </StyledImageDesignationContainer>
             <StyledDivider flexItem={true}/>
             <StyledContactContainer>
-                <ContactItem type={"email"} value={"rpalsingh715@gmail.com"}/>
-                <ContactItem type={"phone"} value={"+91 (705) 553-6884"}/>
-                <ContactItem type={"location"} value={"Madhapur, Hyderabad, India"}/>
+                {
+                    USER_CONTACT.map((contact, index) =>
+                        <ContactItem type={contact.type} value={contact.value} key={index}/>
+                    )
+                }
             </StyledContactContainer>
             <StyledDivider flexItem={true}/>
             <StyledSocialConnectionContainer>
-                <SocialContact type={"linkedin"} href={"https://www.linkedin.com/in/rupinder-p-s/"}/>
-                <SocialContact type={"github"} href={"https://github.com/RPSingh0"}/>
+                {
+                    USER_SOCIAL_CONTACT.map((socialContact, index) =>
+                        <SocialContact type={socialContact.type} href={socialContact.value} key={index}/>
+                    )
+                }
             </StyledSocialConnectionContainer>
         </StyledAsideContainer>
     );

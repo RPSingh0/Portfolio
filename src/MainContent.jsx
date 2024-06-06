@@ -1,18 +1,16 @@
 import {Box, styled, useMediaQuery} from "@mui/material";
 import {grey} from "@mui/material/colors";
-import Resume from "./Resume.jsx";
-import AboutMe from "./AboutMe.jsx";
-import Projects from "./Projects.jsx";
 import {SpeedDial, SpeedDialAction} from "@mui/lab";
-import {Autorenew, Description, Home, Public} from "@mui/icons-material";
+import {Autorenew} from "@mui/icons-material";
 import {useState} from "react";
+import {CONTENT_TO_KEY_MAP, SCREENS} from "./utils/Utils.jsx";
 
 const StyledMainContentContainer = styled(Box)(() => ({
     flex: 4,
     border: "1px solid",
     borderColor: grey["600"],
     padding: "2rem",
-    backgroundColor: grey["900"],
+    backgroundColor: "#181e29",
     borderRadius: "1rem",
     position: "relative"
 }));
@@ -28,30 +26,6 @@ const StyledSpeedDial = styled(SpeedDial)(() => ({
         borderBottomLeftRadius: "1rem"
     }
 }));
-
-const SCREENS = [
-    {
-        key: "home",
-        icon: <Home/>,
-        text: "Home / About"
-    },
-    {
-        key: "resume",
-        icon: <Description/>,
-        text: "Resume"
-    },
-    {
-        key: "projects",
-        icon: <Public/>,
-        text: "Projects"
-    }
-]
-
-const CONTENT_TO_KEY_MAP = {
-    "home": <AboutMe/>,
-    "resume": <Resume/>,
-    "projects": <Projects/>
-}
 
 function MainContent() {
 
@@ -93,7 +67,6 @@ function MainContent() {
                     )
                 }
             </StyledSpeedDial>
-
         </StyledMainContentContainer>
     );
 }

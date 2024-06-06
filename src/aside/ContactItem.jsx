@@ -12,7 +12,7 @@ const StyledIconContainer = styled(Box)(() => ({
     display: "flex",
     justifyContent: "center",
     padding: "0.5rem",
-    backgroundColor: grey["800"],
+    backgroundColor: "#353c4a",
     borderRadius: "0.5rem",
 }));
 
