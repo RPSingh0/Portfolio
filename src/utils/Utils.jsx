@@ -17,6 +17,7 @@ import {IoLogoJavascript} from "react-icons/io";
 import {SiFirebase, SiMui, SiMysql, SiRedux, SiSpring, SiSpringboot} from "react-icons/si";
 import {RiTailwindCssFill} from "react-icons/ri";
 import {DiMongodb} from "react-icons/di";
+import {Code, OpenInNew} from "@mui/icons-material";
 
 export const TYPE_TO_ICON_MAP = {
     "email": <MdEmail/>,
@@ -28,6 +29,12 @@ export const TYPE_TO_ICON_MAP = {
     "education": <FaBookOpen/>,
     "work": <MdWork/>,
     "skills": <BsFillTerminalFill/>
+}
+
+export const CHIP_TYPE_TO_ICON_MAP = {
+    "live": <OpenInNew sx={{color: "red"}}/>,
+    "frontend": <Code/>,
+    "backend": <Code/>
 }
 
 export const TECH_TO_ICON_MAP = {
