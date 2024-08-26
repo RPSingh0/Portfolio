@@ -59,7 +59,7 @@ export const ABOUT_USER = [
 
 export const WHAT_USER_IS_DOING = [
     {
-        as: "Software Engineer",
+        as: "Senior Software Engineer",
         where: "ValueLabs",
         about: "As a Software Engineer at ValueLabs, I develop high-impact solutions using React, Node.js, Java, and AWS. I’ve built an advanced order management system, improved task tracking, and integrated real-time services for an ecommerce platform, earning multiple client appreciations for my work on data visualization and design excellence."
     }
@@ -137,7 +137,7 @@ export const PROJECT_DATA = [
             frontend: "https://github.com/RPSingh0/EcommerceFrontend",
             backend: "https://github.com/RPSingh0/EcommerceBackend"
         },
-        live: "http://ecommerce-production-r.s3-website-us-east-1.amazonaws.com/"
+        live: "https://rpsingh0.github.io/EcommerceFrontend/"
     },
     {
         image: "./projects/react-blogs.png",
@@ -147,7 +147,7 @@ export const PROJECT_DATA = [
             frontend: "https://github.com/RPSingh0/ReactBlogFrontend",
             backend: "https://github.com/RPSingh0/ReactBlogsBackend"
         },
-        live: "http://react-blogs-r.s3-website-us-east-1.amazonaws.com/"
+        live: "https://rpsingh0.github.io/ReactBlogFrontend/"
     },
     {
         image: "./projects/react-todo.png",
@@ -156,7 +156,7 @@ export const PROJECT_DATA = [
         code: {
             frontend: "https://github.com/RPSingh0/TodoApplication"
         },
-        live: "http://todo-application-r.s3-website-us-east-1.amazonaws.com/"
+        live: "https://rpsingh0.github.io/TodoApplication/"
     },
     {
         image: "./projects/html-omnifood.png",
@@ -165,7 +165,7 @@ export const PROJECT_DATA = [
         code: {
             frontend: "https://github.com/RPSingh0/Omnifood"
         },
-        live: "http://omnifood-r.s3-website-us-east-1.amazonaws.com/"
+        live: "https://rpsingh0.github.io/Omnifood/"
     },
     {
         image: "./projects/java-springboot.png",
